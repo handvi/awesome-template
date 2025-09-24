@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Nexa SaaS</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="bg-gradient-to-r from-primary-500 to-secondary-500 p-2 rounded-lg">
+                        <span class="text-white font-bold text-xl">N</span>
+                    </div>
+                    <span class="ml-2 text-xl font-bold text-dark-900">Nexa</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-primary-500 transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary-500 transition-colors">About</a>
+                    <a href="pricing.html" class="text-gray-600 hover:text-primary-500 transition-colors">Pricing</a>
+                    <a href="blog.html" class="text-primary-500 font-semibold">Blog</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-primary-500 transition-colors">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="login.html" class="text-gray-600 hover:text-primary-500 hidden md:block">Sign In</a>
+                    <a href="signup.html" class="btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Hero -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-white to-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-dark-900 mb-6">Nexa Blog</h1>
+            <p class="text-xl text-gray-600">
+                Insights, tips, and updates from the world of SaaS and technology.
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Main Content -->
+                <div class="lg:col-span-2">
+                    <!-- Featured Post -->
+                    <div class="card mb-8">
+                        <img src="https://placehold.co/800x400/3b82f6/ffffff?text=Featured+Post" 
+                             alt="Featured Post" class="w-full h-64 object-cover rounded-lg mb-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span class="bg-primary-100 text-primary-800 px-2 py-1 rounded">Featured</span>
+                            <span class="mx-2">•</span>
+                            <span>January 15, 2024</span>
+                            <span class="mx-2">•</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h2 class="text-2xl font-bold text-dark-900 mb-4">
+                            <a href="blog-single.html" class="hover:text-primary-500 transition-colors">
+                                The Future of SaaS: Trends to Watch in 2024
+                            </a>
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            Explore the emerging trends that are shaping the SaaS industry and how 
+                            businesses can adapt to stay ahead of the curve.
+                        </p>
+                        <a href="blog-single.html" class="text-primary-500 font-semibold hover:text-primary-600 transition-colors">
+                            Read more →
+                        </a>
+                    </div>
+
+                    <!-- Blog Posts Grid -->
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Post 1 -->
+                        <div class="card">
+                            <img src="https://placehold.co/400x200/8b5cf6/ffffff?text=Post+1" 
+                                 alt="Blog Post" class="w-full h-40 object-cover rounded-lg mb-4">
+                            <div class="text-sm text-gray-500 mb-2">January 12, 2024 • 3 min read</div>
+                            <h3 class="text-xl font-bold text-dark-900 mb-2">
+                                <a href="blog-single.html" class="hover:text-primary-500 transition-colors">
+                                    How to Optimize Your SaaS Pricing Strategy
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Learn effective pricing strategies to maximize revenue and customer satisfaction.</p>
+                        </div>
+
+                        <!-- Post 2 -->
+                        <div class="card">
+                            <img src="https://placehold.co/400x200/10b981/ffffff?text=Post+2" 
+                                 alt="Blog Post" class="w-full h-40 object-cover rounded-lg mb-4">
+                            <div class="text-sm text-gray-500 mb-2">January 10, 2024 • 4 min read</div>
+                            <h3 class="text-xl font-bold text-dark-900 mb-2">
+                                <a href="blog-single.html" class="hover:text-primary-500 transition-colors">
+                                    Building Scalable Architecture for Growing Startups
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Technical insights on creating systems that grow with your business.</p>
+                        </div>
+
+                        <!-- Post 3 -->
+                        <div class="card">
+                            <img src="https://placehold.co/400x200/ef4444/ffffff?text=Post+3" 
+                                 alt="Blog Post" class="w-full h-40 object-cover rounded-lg mb-4">
+                            <div class="text-sm text-gray-500 mb-2">January 8, 2024 • 6 min read</div>
+                            <h3 class="text-xl font-bold text-dark-900 mb-2">
+                                <a href="blog-single.html" class="hover:text-primary-500 transition-colors">
+                                    Customer Success: The Key to SaaS Retention
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">Proven strategies to improve customer retention and reduce churn.</p>
+                        </div>
+
+                        <!-- Post 4 -->
+                        <div class="card">
+                            <img src="https://placehold.co/400x200/f59e0b/ffffff?text=Post+4" 
+                                 alt="Blog Post" class="w-full h-40 object-cover rounded-lg mb-4">
+                            <div class="text-sm text-gray-500 mb-2">January 5, 2024 • 5 min read</div>
+                            <h3 class="text-xl font-bold text-dark-900 mb-2">
+                                <a href="blog-single.html" class="hover:text-primary-500 transition-colors">
+                                    The Power of Data-Driven Decision Making
+                                </a>
+                            </h3>
+                            <p class="text-gray-600">How to leverage analytics to make informed business decisions.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="flex justify-center mt-12 space-x-2">
+                        <a href="#" class="px-4 py-2 bg-primary-500 text-white rounded-lg">1</a>
+                        <a href="#" class="px-4 py-2 text-gray-600 hover:text-primary-500 rounded-lg">2</a>
+                        <a href="#" class="px-4 py-2 text-gray-600 hover:text-primary-500 rounded-lg">3</a>
+                        <a href="#" class="px-4 py-2 text-gray-600 hover:text-primary-500 rounded-lg">Next →</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="lg:col-span-1">
+                    <!-- Search -->
+                    <div class="card mb-8">
+                        <h3 class="text-lg font-bold text-dark-900 mb-4">Search</h3>
+                        <div class="flex">
+                            <input type="text" placeholder="Search articles..." class="flex-1 border border-gray-300 rounded-l-lg px-4 py-2 focus:outline-none focus:border-primary-500">
+                            <button class="bg-primary-500 text-white px-4 rounded-r-lg hover:bg-primary-600 transition-colors">
+                                🔍
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="card mb-8">
+                        <h3 class="text-lg font-bold text-dark-900 mb-4">Categories</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-600 hover:text-primary-500 transition-colors">SaaS Trends (12)</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-primary-500 transition-colors">Product Updates (8)</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-primary-500 transition-colors">Growth Strategies (15)</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-primary-500 transition-colors">Technical Guides (6)</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-primary-500 transition-colors">Company News (4)</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="card bg-gradient-to-br from-primary-50 to-secondary-50">
+                        <h3 class="text-lg font-bold text-dark-900 mb-4">Newsletter</h3>
+                        <p class="text-gray-600 mb-4">Get the latest articles and updates delivered to your inbox.</p>
+                        <form class="space-y-3">
+                            <input type="email" placeholder="Your email" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-primary-500">
+                            <button type="submit" class="w-full btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-900 text-white py-12">
+        <!-- ... footer code ... -->
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
