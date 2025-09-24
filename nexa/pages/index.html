@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexa - Modern SaaS Solution</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="bg-gradient-to-r from-primary-500 to-secondary-500 p-2 rounded-lg">
+                        <span class="text-white font-bold text-xl">N</span>
+                    </div>
+                    <span class="ml-2 text-xl font-bold text-dark-900">Nexa</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-primary-500 transition-colors">Features</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-primary-500 transition-colors">Pricing</a>
+                    <a href="about.html" class="text-gray-600 hover:text-primary-500 transition-colors">About</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-primary-500 transition-colors">Blog</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex items-center space-x-4">
+                    <a href="login.html" class="text-gray-600 hover:text-primary-500 hidden md:block">Sign In</a>
+                    <a href="#pricing" class="btn-primary">Get Started</a>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden" id="mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen bg-gradient-to-br from-white via-blue-50 to-indigo-100 pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-7xl font-bold text-dark-900 mb-6 animate-fade-in">
+                    Build Your Dream
+                    <span class="text-gradient">SaaS Product</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Everything you need to build, launch, and scale your SaaS business with our modern template and components.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    <a href="#pricing" class="btn-primary text-lg px-8 py-4">Start Free Trial</a>
+                    <a href="#features" class="btn-outline text-lg px-8 py-4">View Demo</a>
+                </div>
+                
+                <!-- Hero Image/Animation -->
+                <div class="relative max-w-4xl mx-auto">
+                    <div class="bg-white rounded-2xl shadow-2xl p-8 transform rotate-1 hover:rotate-0 transition-transform duration-300">
+                        <img src="https://placehold.co/800x400/3b82f6/ffffff?text=SaaS+Dashboard+Preview" 
+                             alt="SaaS Dashboard" class="rounded-lg w-full">
+                    </div>
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-primary-500 rounded-full opacity-20 animate-float"></div>
+                    <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-secondary-500 rounded-full opacity-20 animate-float" style="animation-delay: 2s;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-dark-900 mb-4">Powerful Features</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Everything you need to succeed in one powerful platform</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="card group hover:border-primary-500 transition-all duration-300">
+                    <div class="bg-gradient-to-r from-primary-500 to-secondary-500 p-3 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-900 mb-2">Lightning Fast</h3>
+                    <p class="text-gray-600">Optimized for performance with lazy loading and efficient code splitting.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="card group hover:border-primary-500 transition-all duration-300">
+                    <div class="bg-gradient-to-r from-primary-500 to-secondary-500 p-3 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-900 mb-2">Secure & Reliable</h3>
+                    <p class="text-gray-600">Enterprise-grade security with encryption and compliance built-in.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="card group hover:border-primary-500 transition-all duration-300">
+                    <div class="bg-gradient-to-r from-primary-500 to-secondary-500 p-3 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark-900 mb-2">Easy Customization</h3>
+                    <p class="text-gray-600">Modular components that are easy to customize and extend.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section-padding bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-dark-900 mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-xl text-gray-600">Start free, upgrade as you grow</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Starter Plan -->
+                <div class="card text-center relative">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-700 mb-2">Starter</h3>
+                        <div class="mb-4">
+                            <span class="text-4xl font-bold text-dark-900">$29</span>
+                            <span class="text-gray-600">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="text-gray-600">✓ Up to 5 projects</li>
+                            <li class="text-gray-600">✓ Basic analytics</li>
+                            <li class="text-gray-600">✓ Email support</li>
+                            <li class="text-gray-400">✗ Advanced features</li>
+                        </ul>
+                        <button class="btn-outline w-full">Get Started</button>
+                    </div>
+                </div>
+
+                <!-- Pro Plan (Featured) -->
+                <div class="card text-center relative border-2 border-primary-500 transform scale-105">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <span class="bg-primary-500 text-white px-4 py-1 rounded-full text-sm font-semibold">MOST POPULAR</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-700 mb-2">Professional</h3>
+                        <div class="mb-4">
+                            <span class="text-4xl font-bold text-dark-900">$79</span>
+                            <span class="text-gray-600">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="text-gray-600">✓ Unlimited projects</li>
+                            <li class="text-gray-600">✓ Advanced analytics</li>
+                            <li class="text-gray-600">✓ Priority support</li>
+                            <li class="text-gray-600">✓ All features included</li>
+                        </ul>
+                        <button class="btn-primary w-full">Get Started</button>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="card text-center relative">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-700 mb-2">Enterprise</h3>
+                        <div class="mb-4">
+                            <span class="text-4xl font-bold text-dark-900">$199</span>
+                            <span class="text-gray-600">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="text-gray-600">✓ Unlimited everything</li>
+                            <li class="text-gray-600">✓ Custom solutions</li>
+                            <li class="text-gray-600">✓ Dedicated manager</li>
+                            <li class="text-gray-600">✓ SLA guarantee</li>
+                        </ul>
+                        <button class="btn-outline w-full">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gradient-to-r from-primary-500 to-secondary-500 p-2 rounded-lg">
+                            <span class="text-white font-bold text-xl">N</span>
+                        </div>
+                        <span class="ml-2 text-xl font-bold">Nexa</span>
+                    </div>
+                    <p class="text-gray-400">Building the future of SaaS solutions.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">API</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="blog.html" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Nexa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
