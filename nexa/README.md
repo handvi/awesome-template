@@ -14,6 +14,7 @@ Premium SaaS startup template built with Tailwind CSS.
 1. Install dependencies:
 
 ```bash 
+
 # install Node Modules
 npm install
 
@@ -22,4 +23,5 @@ npm run dev
 
 # Production build :
 npm run prod
+
 ```
